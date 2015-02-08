@@ -1,7 +1,12 @@
 # tabs
+Dependencies
+'''
+gem 'devise'
+gem 'sass-rails'
+gem 'bootstrap-sass'
+'''
 
-To develop on your local:
-Clone the repo and cd into it
+Develop on local:
 ```
 bundle
 rake db:migrate
