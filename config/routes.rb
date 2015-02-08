@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'users/new'
+  devise_for :users, :path_names => {:sign_up => "register"}
 
-  root :to => "users#new"
+  resources :tabs
+  root :to => "tabs#new"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

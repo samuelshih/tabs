@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150208065633) do
+ActiveRecord::Schema.define(version: 20150208182337) do
+
+  create_table "tabs", force: true do |t|
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: true do |t|
     t.datetime "created_at",                          null: false
